@@ -1,0 +1,33 @@
+.header-row {
+  background-color: #4285f4; /* Ganti dengan warna yang diinginkan untuk header row */
+  color: white; /* Ganti dengan warna teks yang sesuai dengan latar belakang */
+
+  font-weight: bold;
+}
+
+ion-row {
+  border-bottom: 1px solid #ccc; // Garis pemisah antar baris
+  padding: 10px; // Padding antar kolom
+}
+
+ion-col {
+  text-align: center; // Pusatkan teks di setiap kolom
+}
+
+// Media queries untuk responsivitas
+@media (max-width: 600px) {
+  .header-row {
+    font-size: 14px; // Ukuran font lebih kecil untuk layar kecil
+  }
+
+  ion-row {
+    font-size: 12px; // Ukuran font lebih kecil untuk layar kecil
+  }
+}
+
+.highlight-text {
+  color: #e95353;
+}
+.highlight-text1 {
+  color: #4bf182;
+}

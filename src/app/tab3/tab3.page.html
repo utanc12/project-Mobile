@@ -1,0 +1,108 @@
+<ion-content [fullscreen]="true" class="white-background">
+  <ion-card class="info-card">
+    <ion-card-header>
+      <ion-card-title
+        ><ion-icon name="checkmark-circle-outline"></ion-icon> Pendaftaran Calon
+        Mahasiswa</ion-card-title
+      >
+    </ion-card-header>
+    <ion-card-content>
+      <ion-list>
+        <ion-item>
+          <ion-label position="stacked">Nama Lengkap</ion-label>
+          <ion-input
+            [(ngModel)]="nama_lengkap"
+            type="text"
+            placeholder="Masukkan Nama Lengkap"
+          ></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label position="stacked">Jenis Kelamin</ion-label>
+          <ion-select
+            placeholder="Pilih Jenis Kelamin"
+            [(ngModel)]="jenis_kelamin"
+          >
+            <ion-select-option value="laki-laki">Laki-laki</ion-select-option>
+            <ion-select-option value="perempuan">Perempuan</ion-select-option>
+          </ion-select>
+        </ion-item>
+
+        <ion-item>
+          <ion-label position="stacked">No. Handphone</ion-label>
+          <ion-input
+            [(ngModel)]="no_handphone"
+            type="tel"
+            placeholder="Masukkan No.Handphone"
+          ></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label position="stacked">Email</ion-label>
+          <ion-input
+            [(ngModel)]="email"
+            type="email"
+            placeholder="Masukkan Email"
+          ></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label position="stacked">Asal Sekolah</ion-label>
+          <ion-input
+            [(ngModel)]="asal_sekolah"
+            type="text"
+            placeholder="Masukkan Asal Sekolah"
+          ></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label position="stacked">Program Studi</ion-label>
+          <ion-select
+            placeholder="Pilih Program Studi"
+            [(ngModel)]="program_studi"
+          >
+            <ion-select-option value="ti">Teknik Informatika</ion-select-option>
+            <ion-select-option value="tekin"
+              >Tekhnologi Informasi</ion-select-option
+            >
+            <ion-select-option value="si">Sistem Informasi</ion-select-option>
+          </ion-select>
+        </ion-item>
+
+        <ion-item>
+          <ion-label position="stacked">Jenjang</ion-label>
+          <ion-select placeholder="Pilih Jenjang" [(ngModel)]="jenjang">
+            <ion-select-option value="d3">Diploma (D3)</ion-select-option>
+            <ion-select-option value="s1">Sarjana (S1)</ion-select-option>
+            <ion-select-option value="s2">Magister (S2)</ion-select-option>
+          </ion-select>
+        </ion-item>
+
+        <ion-item>
+          <ion-label position="stacked">Kelas</ion-label>
+          <ion-select placeholder="Pilih Kelas" [(ngModel)]="kelas">
+            <ion-select-option value="ka">Kelas A</ion-select-option>
+            <ion-select-option value="kb">Kelas B</ion-select-option>
+            <ion-select-option value="kc">Kelas C</ion-select-option>
+            <ion-select-option value="kd">Kelas D</ion-select-option>
+          </ion-select>
+        </ion-item>
+
+        <ion-item>
+          <ion-label position="stacked">Info Kampus</ion-label>
+          <ion-select placeholder="Pilih Info Kampus" [(ngModel)]="info_kampus">
+            <ion-select-option value="mahasiswa"
+              >Mahasiswa Unbin</ion-select-option
+            >
+            <ion-select-option value="internet">Internet</ion-select-option>
+            <ion-select-option value="guru">Rekomendasi Guru</ion-select-option>
+          </ion-select>
+        </ion-item>
+      </ion-list>
+
+      <ion-button expand="block" (click)="addData()" color="primary"
+        >Kirim</ion-button
+      >
+    </ion-card-content>
+  </ion-card>
+</ion-content>

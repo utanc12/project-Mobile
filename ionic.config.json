@@ -1,0 +1,7 @@
+{
+  "name": "uasdit",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

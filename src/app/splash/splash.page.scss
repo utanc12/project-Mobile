@@ -1,0 +1,41 @@
+ion-content {
+  --background: url('https://ae.sttkd.ac.id/wp-content/uploads/2023/02/The-Future-of-AI.jpg') no-repeat center center fixed;
+  background-size: cover;
+
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh; /* Mengisi tinggi konten hingga seluruh tinggi layar */
+    }
+  
+    .scale-up-center {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  
+      img {
+        animation: scale-up-center 0.7s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+        max-width: 150px; /* Sesuaikan ukuran gambar */
+        max-height: 150px; /* Sesuaikan ukuran gambar */
+        margin-bottom: 10px;
+      }
+    }
+  
+    @keyframes scale-up-center {
+      0% {
+        transform: scale(0);
+      }
+      100% {
+        transform: scale(1);
+      }
+    }
+  }
+  
+  .tengah {
+    text-align: center;
+    margin-top: 50px; /* optional: menambahkan margin atas */
+    display: block;
+}
+
+

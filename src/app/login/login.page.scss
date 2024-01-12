@@ -1,0 +1,36 @@
+.logo-container {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.logo-container img {
+  width: 150px; /* Atur lebar gambar sesuai kebutuhan Anda */
+  height: 150px;
+}
+
+.login-form {
+  padding: 0 20px;
+}
+
+.input-item {
+  --padding-start: 0;
+  --padding-end: 0;
+  --inner-padding-end: 0;
+  margin-bottom: 15px;
+}
+
+.login-button {
+  margin-top: 20px;
+  --background: #00b140;
+}
+
+.error-message {
+  text-align: center;
+  margin-top: 10px;
+  color: red;
+}
+
+    .tengah {
+        text-align: center;
+        margin-top: 50px; /* optional: menambahkan margin atas */
+    }

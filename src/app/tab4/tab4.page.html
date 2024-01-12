@@ -1,0 +1,48 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="primary">
+    <ion-title>Data Calon Mahasiswa</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-searchbar
+    [(ngModel)]="searchTerm"
+    (ionChange)="filterData()"
+  ></ion-searchbar>
+
+  <ion-list>
+    <ion-grid>
+      <!-- Header Row -->
+      <ion-row class="header-row">
+        <ion-col class="header-col">No</ion-col>
+        <ion-col class="header-col">Reg ID</ion-col>
+        <ion-col class="header-col">Password</ion-col>
+        <ion-col class="header-col">Nama</ion-col>
+        <ion-col class="header-col">Status</ion-col>
+      </ion-row>
+
+      <!-- Data Rows -->
+      <!-- Data Rows -->
+      <ion-row *ngFor="let data of filteredData; let i = index">
+        <ion-col>{{ i + 1 }}</ion-col>
+        <ion-col>{{ data.kd_reg }}</ion-col>
+        <ion-col>{{ data.pass }}</ion-col>
+        <ion-col>{{ data.nama }}</ion-col>
+        <ion-col
+          [ngClass]="{'highlight-text': data.status === 'Menunggu Verifikasi Pendaftaran', 'highlight-text1': data.status === 'Verifikasi Pendaftaran OK.'}"
+          >{{ data.status }}</ion-col
+        >
+      </ion-row>
+    </ion-grid>
+  </ion-list>
+
+  <ion-refresher slot="fixed" (ionRefresh)="handleRefresh($event)">
+    <ion-refresher-content
+      pullingIcon="chevron-down-circle-outline"
+      pullingText="Pull to refresh"
+      refreshingSpinner="circles"
+      refreshingText="Refreshing..."
+    >
+    </ion-refresher-content>
+  </ion-refresher>
+</ion-content>

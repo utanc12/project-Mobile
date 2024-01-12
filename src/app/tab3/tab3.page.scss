@@ -1,0 +1,61 @@
+/* Global Styles */
+ion-content {
+    --ion-background-color: #f4f4f4; /* Set the background color for ion-content */
+  }
+  
+  /* Header Styles */
+  ion-toolbar {
+    --ion-background-color: #3880ff; /* Set the background color for the header */
+    color: #ffffff; /* Set the text color for the header */
+  }
+  
+  ion-title {
+    font-size: 1.5em; /* Set the font size for the title */
+  }
+  
+  /* Input Styles */
+  .label {
+    font-weight: bold; /* Make the label text bold */
+  }
+  
+  .inputbox {
+    margin: 10px 0; /* Add some margin to the input boxes */
+  }
+  
+  ion-input {
+    border: 1px solid #ccc; /* Add a border to the input fields */
+    border-radius: 5px; /* Add border-radius to round the corners */
+    padding: 8px; /* Add padding to the input fields */
+  }
+  
+  /* Radio Group Styles */
+  ion-list-header {
+    font-weight: bold; /* Make the list headers bold */
+  }
+  
+  ion-item {
+    padding: 5px 0; /* Add some vertical padding to the items in the radio group */
+  }
+  
+  /* Select Styles */
+  ion-select {
+    border: 1px solid #ccc; /* Add a border to the select field */
+    border-radius: 5px; /* Add border-radius to round the corners */
+  }
+  
+  /* File Input Styles */
+  ion-list-header {
+    margin-top: 20px; /* Add some margin above the "Foto Mahasiswa" label */
+  }
+  
+  ion-item {
+    border: 1px solid #ccc; /* Add a border to the container of the file input */
+    border-radius: 5px; /* Add border-radius to round the corners */
+    padding: 8px; /* Add padding to the container */
+    cursor: pointer; /* Change cursor to pointer when hovering over the file input container */
+  }
+  
+  /* Button Styles */
+  ion-button {
+    margin-top: 20px; /* Add some margin above the buttons */
+  }

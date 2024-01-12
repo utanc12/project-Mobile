@@ -1,0 +1,183 @@
+:root {
+    --primary-color: #fff; /* try #212121 also for dark mode */
+    --background-color: #212121;
+    --font: sans-serif;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    background: var(--background-color);
+    font-family: var(--font);
+    display: flex;
+    justify-content: center;
+  }
+  
+  /* Timeline Container */
+  .timeline {
+    background: var(--primary-color);
+    margin: 20px auto;
+    padding: 20px;
+  }
+  
+  /* Outer Layer with the timeline border */
+  .outer {
+    border-left: 2px solid #333;
+  }
+  
+  /* Card container */
+  .card {
+    position: relative;
+    margin: 0 0 20px 20px;
+    padding: 10px;
+    background: #c9c5c575;
+    color: rgb(71, 69, 69);
+    border-radius: 8px;
+    max-width: 400px;
+  }
+  
+  /* Information about the timeline */
+  .info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  /* Title of the card */
+  .title {
+    color: orangered;
+    position: relative;
+  }
+  
+  /* Timeline dot  */
+  .title::before {
+    content: "";
+    position: absolute;
+    width: 45px;
+    height: 45px;
+    background: url("https://i.ibb.co/zrWjRxk/profile.webp") center/cover
+      no-repeat;
+    border-radius: 999px;
+    left: -53px;
+    border: none;
+  }
+  
+  .text5::before {
+    content: "";
+    position: absolute;
+    width: 45px;
+    height: 45px;
+    background: url("https://i.ibb.co/ykNzfTF/clock-306096-1280.webp")
+      center/cover no-repeat;
+    border-radius: 999px;
+    left: -53px;
+    border: none;
+  }
+  
+  .word1 {
+    color: #006eff;
+  }
+  .word2 {
+    color: #050505;
+    font-weight: bold;
+  }
+  .word3 {
+    color: #006eff;
+    font-weight: bold;
+  }
+  .word4 {
+    color: #000000;
+    font-weight: bold;
+  }
+  .word5 {
+    color: #006eff;
+    font-weight: bold;
+  }
+  .word6 {
+    color: #006eff;
+    font-weight: bold;
+  }
+  .word7 {
+    color: #006eff;
+    font-weight: bold;
+  }
+  .word8 {
+    color: #070707;
+    font-weight: bold;
+  }
+  .word9 {
+    color: #070707;
+    font-weight: bold;
+  }
+  .word10 {
+    color: #070707;
+    font-weight: bold;
+  }
+  .word11 {
+    color: #070707;
+    font-weight: bold;
+  }
+  .word12 {
+    color: #006eff;
+    font-weight: bold;
+  }
+  .word13 {
+    color: #006eff;
+    font-weight: bold;
+  }
+  
+  .tai {
+    display: table;
+    background-color: #06911d;
+    color: #fff;
+    padding: 10px;
+    font-size: 1em;
+    margin-left: -20px;
+    margin-top: 0px;
+    margin-bottom: 10px; /* Menambahkan jarak di bawah elemen */
+    border-radius: 8px;
+  }
+  
+  .text3 {
+    display: table;
+    background-color: #06911d;
+    color: #fff;
+    padding: 10px;
+    font-size: 1em;
+    margin-left: -20px;
+    margin-top: 0px;
+    margin-bottom: 10px; /* Menambahkan jarak di bawah elemen */
+    border-radius: 8px;
+  }
+  
+  .text4 {
+    display: table;
+    background-color: #970505;
+    color: #fff;
+    padding: 10px;
+    font-size: 1em;
+    margin-left: -20px;
+    margin-top: 0px;
+    margin-bottom: 10px; /* Menambahkan jarak di bawah elemen */
+    border-radius: 8px;
+  }
+  .text5 {
+    display: table;
+    background-color: #ffffff00;
+    color: #ffffff00;
+  }
+  
+  .text6 {
+    display: table;
+    background-color: #06911d;
+    color: #fff;
+    padding: 10px;
+    font-size: 1em;
+    margin-left: -20px;
+    margin-top: 0px;
+    margin-bottom: 10px; /* Menambahkan jarak di bawah elemen */
+    border-radius: 8px;
+  }
